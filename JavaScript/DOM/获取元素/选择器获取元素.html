@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <ul>
+        <li class="a">1</li>
+        <li class="a">2</li>
+        <li class="a">3</li>
+        <li id="a">4</li>
+    </ul>
+    <div id="div">
+        <div>
+            <span>
+                <a href="">21</a>
+            </span>
+        </div>
+    </div>
+    <script>
+        var ul = document.getElementById('ul');
+        var x = document.querySelector('#div>div>span>a');
+        var lis = ul.querySelectorAll('li');
+        console.log(lis);
+    </script>
+</body>
+</html>

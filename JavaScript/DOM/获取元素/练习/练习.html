@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <h1 id="a1">昨天晚上睡太晚,困的一批</h1>
+    <script>
+        var a1 = document.getElementById("a1");
+        console.log(a1.tagName);
+
+        //方法一:
+        if(a1.tagName == 'H1' || a1.tagName == 'H2' || a1.tagName == 'H3' || a1.tagName == 'H4' || a1.tagName == 'H5' || a1.tagName == 'H6'){
+               a1.style.fontWeight = 400;
+            }
+        //方法二:
+        //不管是不是粗体,同一变为细体
+        a1.style.fontWeight = 400;
+
+        //方法三:
+        var arr= ['H1','H2','H3','H4','H5','H6','B','STRONG']
+        //console.log(arr.indexOf('DIV'))
+        var isTure= arr.indexOf(a1.tagName);
+        console.log(isTure);
+        //判断如果是粗体标签名  就改变样式
+        if(isTrue != -1){
+            a1.style.fontWeight = 200;
+            a1.style.color = 'red';
+        }
+        alert('');
+    </script>
+</body>
+</html>
